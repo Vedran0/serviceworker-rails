@@ -1,6 +1,7 @@
+<%= link_to "Users", users_path %>
 <% @posts.each do |post| %>
 
   <h2><%= post.name %>:</h2>
-  <p><%= post.message %></p>
+  <p><em>"<%= post.message %>"</em></p>
 
 <% end %>
