@@ -1,8 +1,9 @@
 <%= link_to "Go home, u drunk", root_path %>
 
 <h1>Users</h1>
-<ul>
-  <% @users.each do |user| %>
-    <li><h3><%= user %></h3></li>
+  <% @posts.each do |post| %>
+    <h2><%= post.name %></h2>
+    <p>from: <em><%= post.place %></em></p>
   <% end %>
-</ul>
+
+<%= link_to "Go to never visited dimension", never_visited_path %>

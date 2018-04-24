@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   end
 
   def users
-    @users = Post.all.sample(10).map(&:name)
+    @posts = Post.all.sample(10)
   end
 
   def never_visited
